@@ -1,0 +1,6 @@
+if hot
+    it's a hot day
+    drink plenty of water
+if cold
+    it's a cold day
+    drink a cup of coffee
