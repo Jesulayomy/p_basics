@@ -3,4 +3,9 @@ def time_stamp(strn):
     print('*' * 30)
 
 
-time_stamp("3:19")
+def lbs_to_kg(weight):
+    return weight * 0.45
+
+
+def kg_to_lbs(weight):
+    return weight / 0.45

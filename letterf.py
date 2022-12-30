@@ -1,5 +1,6 @@
-print("Learning Python with mosh - 1:41m")
-print('*' * 30)
+import modules
+
+modules.time_stamp("1:41")
 
 numbers = [2, 7, 1, 3, 5, 7, 8, 9, 3, 7, 2, 5, 4, 6, 2]
 names = ['John', 'Bon', 'Mosh', 'Sarah', 'Mary']
@@ -28,8 +29,7 @@ for number in numbers:
         uniques.append(number)
 print(uniques)
 
-print("Learning Python with mosh - 2:10m")
-print('*' * 30)
+modules.time_stamp("2:10")
 
 numbers2 = (7, 1, 3, 5, 7, 8, 9, 3, 7, 2)
 # numbers2[2] = 13
@@ -47,9 +47,7 @@ f = c * d * e
 
 print(a, b, f)
 
-print("Learning Python with mosh - 2:27m")
-print('*' * 30)
-
+modules.time_stamp("2:27")
 message = input("> ")
 words = message.split(' ')
 emojis = {
