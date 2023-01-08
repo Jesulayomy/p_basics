@@ -8,6 +8,7 @@ import random
 
 from ecomm.shipping import calc_ship
 
+
 for i in range(3):
     print(random.randint(23, 857))
 

@@ -1,6 +1,5 @@
 print("Learning Python with mosh - 15m")
 print('*' * 30)
-
 patient_name = "John Smith"
 patient_age = 20
 is_old_patient = False
