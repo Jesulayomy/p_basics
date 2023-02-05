@@ -1,0 +1,19 @@
+The student module
+======================
+
+Using Student
+-------------------
+
+SETUP:
+	>>> Student = __import__('student').Student
+
+	Test Cases::
+
+	>>> deku = Student("Izuku Midoriya", [20, 43, 52])
+	>>> deku.name
+	'Izuku Midoriya'
+	>>> deku.basic()
+	Basic move
+	>>> deku.ultimate()
+	Ultimate move
+

@@ -4,25 +4,28 @@ from quirks import Quirk
 class Student(Quirk):
     """ defines a student """
 
-    def __init__(self, name="", grades={}):
+    class_size = 0
+
+    def __init__(self, name="Extras", grades=[0, 0, 0]):
         self.name = name
-        self.grades = {'communication': 0, 'physical': 0, 'strategy': 0}
+        self._comm = grades[0]
+        self._phys = grades[1]
+        self._stam = grades[2]
+        Student.class_size += 1
 
     def intro(self):
+        """ Introduces a student """
         print("My name is {} and I'm in class 1".format(self.name))
-        print("Scores: \n\tComms {}\tPhysical {}\tStrat {}".format(self.grades['communication'], self.grades['physical'], self.grades['strategy']))
+        print("Scores: \n    Comms: {}    Physical: {}    Strat: {}".format(self._comm, self._phys, self._stam))
 
-"""
     @property
-    def grades(self):
-        return self._name
+    def comm(self):
+        """ Communications returned """
 
-    @grades.setter
-    def grades(self, lst=[]):
-        if len(lst) != 3:
-            raise ValueError("Need a list of size 3")
-        else:
-            self.grades['communication'] = lst[0]
-            self.grades['physical'] = lst[1]
-            self.grades['strategy'] = lst[2]
-"""
+        return self._comm
+
+    @comm.setter
+    def comm(self, upgrade):
+        """ Increases the communication skill by upgrade amount """
+
+        self._comm = upgrade
