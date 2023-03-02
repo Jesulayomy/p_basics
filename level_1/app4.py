@@ -10,7 +10,7 @@ while guess_count < 10:
     guess_count += 1
     if guess == i:
         print("Correct Number")
-        print(f"You made {guess_count} guesses")
+        print(f'You made {guess_count} guesses')
         break
 else:
     print(f"You could not guess correctly in {guess_count} tries")
