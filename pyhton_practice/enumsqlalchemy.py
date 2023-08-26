@@ -33,7 +33,7 @@ Base.metadata.create_all(engine)
 
 session = Session()
 session.add(User(id='1', name='John', sex='f'))
-ssesion.commit()
+session.commit()
 query = session.query(User)
 for row in query:
     print(row)
