@@ -7,9 +7,7 @@ from flask import jsonify, make_response
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, String, Enum
 from sqlalchemy import create_engine
-from  uuid import uuid4
-from sqlalchemy.orm import sessionmaker, scoped_session
-# from sys import argv
+from uuid import uuid4
 import enum
 from hashlib import md5
 
